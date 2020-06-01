@@ -17,7 +17,7 @@ class WeatherCityFragment : Fragment() {
         }
     }
 }
-
+```
 
 ###接受示例
 ```kotlin
@@ -61,3 +61,4 @@ class FragmentArgumentDelegate<T : Any> : ReadWriteProperty<Fragment, T> {
         }
     }
 }
+```
