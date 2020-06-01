@@ -2,6 +2,7 @@
 
 
 ###值传递
+```kotlin
 class WeatherCityFragment : Fragment() {
     private var cityId : String by FragmentArgumentDelegate()
 
@@ -19,6 +20,7 @@ class WeatherCityFragment : Fragment() {
 
 
 ###接受示例
+```kotlin
 class FragmentArgumentDelegate<T : Any> : ReadWriteProperty<Fragment, T> {
   override newInstance{
    //通过委托标记的参数创建实例后 读取...
