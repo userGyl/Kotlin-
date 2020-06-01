@@ -3,8 +3,9 @@
  */
 
 //值传递
-class WeatherCityFragment : Fragment() {
 
+
+class WeatherCityFragment : Fragment() {
     private var cityId : String by FragmentArgumentDelegate()
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
@@ -21,6 +22,7 @@ class WeatherCityFragment : Fragment() {
 
 
 //接受示例
+
 class FragmentArgumentDelegate<T : Any> : ReadWriteProperty<Fragment, T> {
   override newInstance{
    //通过委托标记的参数创建实例后 读取...
